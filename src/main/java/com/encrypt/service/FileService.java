@@ -53,10 +53,10 @@ public class FileService {
 		//		File.separator+session+"."+extension),
 		//		StandardCopyOption.REPLACE_EXISTING);
 		
-		//Files.copy(file.getInputStream(),
-		//	   	Paths.get("/app/target/classes/static/img/data/"+
-		//		File.separator+session+"."+extension),
-		//		StandardCopyOption.REPLACE_EXISTING);
+		Files.copy(file.getInputStream(),
+			   	Paths.get("/app/src/main/resources/static/img/data/"+
+				File.separator+session+"."+extension),
+				StandardCopyOption.REPLACE_EXISTING);
 		
 		//create object
 		EncryptHelper encryptHelper = new EncryptHelper();
